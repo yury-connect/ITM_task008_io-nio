@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/08 Знакомство с потоками InputStreamOutputStream, FileInputStream, FileOutputStream, Wrapper (IO_NIO - 0)/08 Знакомство с потоками InputStreamOutputStream, FileInputStream, FileOutputStream, Wrapper (IO_NIO - 0).iml" filepath="$PROJECT_DIR$/08 Знакомство с потоками InputStreamOutputStream, FileInputStream, FileOutputStream, Wrapper (IO_NIO - 0)/08 Знакомство с потоками InputStreamOutputStream, FileInputStream, FileOutputStream, Wrapper (IO_NIO - 0).iml" />
+      <module fileurl="file://$PROJECT_DIR$/09 Знакомство с потоками ReaderWriter, FileReaderFileWriter, Adapter (IO_NIO - 1)/09 Знакомство с потоками ReaderWriter, FileReaderFileWriter, Adapter (IO_NIO - 1).iml" filepath="$PROJECT_DIR$/09 Знакомство с потоками ReaderWriter, FileReaderFileWriter, Adapter (IO_NIO - 1)/09 Знакомство с потоками ReaderWriter, FileReaderFileWriter, Adapter (IO_NIO - 1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/io-nio.iml" filepath="$PROJECT_DIR$/.idea/io-nio.iml" />
+    </modules>
+  </component>
+</project>
