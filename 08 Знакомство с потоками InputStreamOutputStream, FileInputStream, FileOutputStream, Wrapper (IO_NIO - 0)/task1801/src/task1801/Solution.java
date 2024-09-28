@@ -19,5 +19,27 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
+
+        System.out.println(System.getProperty("user.dir")); // выведет текущий путь от корня диска до корня проекта
+        final String path = System.getProperty("user.dir") + "/08 Знакомство с потоками InputStreamOutputStream, FileInputStream, FileOutputStream, Wrapper (IO_NIO - 0)/task1801/";
+
+        System.out.println("Введите имя файла с данными.\n"
+                + "ПОДСКАЗКА: Сейчас нужно ввести '1.txt'.");
+
+        BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
+        final String fileName = consoleReader.readLine();
+//        final String fileName = "1.txt"; // использую для тестирования
+        consoleReader.close();
+
+        try (InputStreamReader fileReader = new InputStreamReader(new FileInputStream(path + fileName))) {
+            int maxByte = Byte.MIN_VALUE;
+            System.out.println("Прочитанные байты:\n---");
+            int current;
+            while ((current = fileReader.read()) != -1) {
+                maxByte = Math.max(maxByte, current);
+                System.out.printf("Прочитан байт: %d\t Символ соответствующий байту: %c\n", current, current);
+            }
+            System.out.printf("---\n\tMax byte: %d\t Символ соответствующий байту: %c", maxByte, + maxByte);
+        }
     }
 }
