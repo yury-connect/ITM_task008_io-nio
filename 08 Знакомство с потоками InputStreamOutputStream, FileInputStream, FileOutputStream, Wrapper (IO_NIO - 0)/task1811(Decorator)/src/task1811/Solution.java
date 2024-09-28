@@ -43,4 +43,31 @@ public class Solution {
         }
     }
 
+    // мой реализуемый класс
+    public static class DecoratorMyRunnableImpl implements Runnable {
+        private Runnable component;
+
+        public DecoratorMyRunnableImpl(RunnableImpl runnable) {
+            this.component = runnable;
+        }
+
+        @Override
+        public void run() {
+            System.out.println("DecoratorMyRunnableImpl body");
+            component.run();
+        }
+    }
 }
+
+
+
+/*
+В Java Decorator (декоратор) — это структурный шаблон проектирования, который позволяет динамически добавлять объектам
+новые обязанности, оборачивая их в классы-декораторы. Это полезно, когда нужно расширить поведение объекта, не изменяя
+его код напрямую и не затрагивая другие объекты того же класса.
+
+Основная идея:
+Объект оборачивается в декоратор, который имеет тот же интерфейс, что и сам объект.
+Декоратор добавляет новое поведение, но при этом может вызывать методы
+оригинального объекта, чтобы сохранить его исходное поведение.
+ */
