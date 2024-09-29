@@ -1,0 +1,4 @@
+text in file
+12345
+Привет мир
+Hello world!
