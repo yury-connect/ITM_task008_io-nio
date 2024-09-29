@@ -57,7 +57,7 @@ public class Solution {
                 String result = processingString(line);
                 byte[] byteArray = (result).getBytes();  // Преобразуем каждую строку в байты
                 fileWriter.write(byteArray); // Записываем байты в файл
-                fileWriter.write(System.lineSeparator().getBytes()); // Записываем символ новой строки
+                fileWriter.write(System.lineSeparator().getBytes()); // Записываем символ новой строки // System.lineSeparator() возвращает символ новой строки, соответствующий текущей операционной системе (\n для Unix, \r\n для Windows).
                 System.out.println(result);
             }
 
