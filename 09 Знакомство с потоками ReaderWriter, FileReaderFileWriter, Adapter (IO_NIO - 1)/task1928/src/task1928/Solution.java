@@ -17,6 +17,12 @@ Requirements:
 4. Класс Solution должен содержать класс C который наследуется от класса A.
 5. Исправь всего одну логическую ошибку.*/
 
+/*
+В параметрах запуска необходимо прописать строчку (третьим параметром можем передавать 'b' или 'c'. Если передать 'a', то в строке 60 возникнет java.lang.ClassCastException :
+outputFile.txt inputFile.txt b
+
+А еще в программе вообще не используется 'outputStream'
+ */
 public class Solution {
     {
         System.out.println("This is the Solution class");
@@ -29,13 +35,12 @@ public class Solution {
         ) {
             ;
             byte[] b = new byte[is.available()];
-            outputStream.write(is.read(b));
-
             int value = 123_456_789;
             System.out.println(value);
 
             Example result = null;
-            String s = "a";
+//            String s = "a"; // Эту  строку заменили представленной ниже строкой
+            String s = args[2];
             switch (s) {
                 case "a": {
                     result = new Solution().new A();
